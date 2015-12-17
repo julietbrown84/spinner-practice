@@ -1,12 +1,12 @@
 var circleRotationOffsetSpeed = randPosInt(50);
-var containerRotationSpeed = 30;
+var containerRotationSpeed = 80;
 
 $(window).load(function () {
 
   $('#insanity').trigger('play');
 
   for (var i = 1; i < 100; i++) {
-    var color = ( i % 2 === 0 ? 'red' : 'black');
+    var color = ( i % 2 === 0 ? 'blue' : 'black');
     var $circle = $("<div class='centered circle'></div>").css({
       'background' : color,
       'height': 5 * i,
